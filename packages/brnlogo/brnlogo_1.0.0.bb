@@ -7,6 +7,8 @@ PR = "r0"
 
 SRC_URI = " \
  file://brnlogo.c \
+ file://brnlogo.png \
+ 
 "
 
 S = "${WORKDIR}"
@@ -23,9 +25,8 @@ do_install () {
    install -d ${D}${bindir}/
    install -d ${D}${datadir}/
    install -d ${D}${datadir}/brn/
-   install -m 0755 ${S}/dfb ${D}${bindir}/
+   install -m 0755 ${S}/brnlogo ${D}${bindir}/
    install -m 0644 ${S}/brnlogo.png ${D}${datadir}/brn/
 }
 
-FILES_${PN} = "${bindir}/dfb \
-{datadir}/brn/brnlogo.png"
+FILES_${PN} = "${bindir}/brnlogo ${datadir}/brn/brnlogo.png"
