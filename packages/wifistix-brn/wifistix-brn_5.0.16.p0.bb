@@ -6,6 +6,7 @@ LICENSE = "GPL"
 RDEPENDS = "kernel (${KERNEL_VERSION})"
 DEPENDS = "virtual/kernel"
 PR = "r2"
+PROVIDES = "wifistix-brn"
 
 SRC_URI = "http://www2.informatik.hu-berlin.de/~sombrutz/pub/cf8385-brn.tar.bz2 \
      "
